@@ -89,6 +89,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+dj22-env/
 
 # Spyder project settings
 .spyderproject
