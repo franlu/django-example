@@ -1,0 +1,144 @@
+item {
+    margin-bottom: 25px;
+}
+
+.row {
+  padding: 10px;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  border-color: rgb(200, 200, 200);
+}
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+	/*==========  Mobile First Method  ==========*/
+
+	/* Custom, iPhone Retina */
+	@media only screen and (min-width : 320px){
+    .border-line {
+      border-top: 1px solid rgb(200, 200, 200);
+
+    }
+
+    .border-right {
+        border: 0;
+      }
+	}
+
+	/* Extra Small Devices, Phones */
+	@media only screen and (min-width : 480px){
+    .border-line {
+        border-top: 1px solid rgb(200, 200, 200);
+    }
+
+    .border-right {
+        border: 0;
+      }
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (min-width : 768px){
+    .border-line {
+        border-top: 1px solid rgb(200, 200, 200);
+    }
+
+    .border-right {
+        border: 0;
+      }
+	}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px){
+    .border-line {
+        border-top: 1px solid rgb(200, 200, 200);
+    }
+
+    .border-right {
+        border: 0;
+      }
+	}
+
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px){
+    .border-line {
+        border-top: 1px solid rgb(200, 200, 200);
+        border-bottom: 1px solid rgb(200, 200, 200);
+    }
+
+    .border-right {
+        border-right: 1px solid rgb(200, 200, 200);
+      }
+	}
+
+
+  /*==========  Non-Mobile First Method  ==========*/
+
+  /* Large Devices, Wide Screens */
+  @media only screen and (max-width : 1200px){
+    .border-line {
+        border-top: 1px solid rgb(200, 200, 200);
+        border-bottom: 1px solid rgb(200, 200, 200);
+    }
+
+    .border-right {
+        border-right: 1px solid rgb(200, 200, 200);
+      }
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width : 992px){
+    .border-line {
+      border-top: 1px solid rgb(200, 200, 200);
+    }
+
+    .border-right {
+        border: 0;
+      }
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width : 768px){
+    .border-line {
+      border-top: 1px solid rgb(200, 200, 200);
+  }
+
+  .border-right {
+      border: 0;
+    }
+
+  }
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width : 480px){
+    .border-line {
+        border-top: 1px solid rgb(200, 200, 200);
+    }
+
+    .border-right {
+        border: 0;
+      }
+  }
+
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width : 320px){
+    .border-line {
+        border-top: 1px solid rgb(200, 200, 200);
+    }
+
+    .border-right {
+        border: 0;
+      }
+
+  }

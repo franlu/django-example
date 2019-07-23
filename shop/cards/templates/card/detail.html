@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% if card %}
+  {% block header %}
+      <h1 class="pull-right">{{ card.name }}</h1>
+  {% endblock%}
+
+  {% block content %}
+    <div class="row border-line">
+    <div class="col-md-6 border-right">
+      <div class="row">
+        <img src="/static/{{ card.image.url }}" class="img-responsive center-block" alt="{{ ficha.name }}" />
+        <!-- <img src="{% static "ficha/imagenes/mapa.png" %}" class="img-responsive center-block" alt="{{ ficha.name }}" />-->
+      </div>
+      <div class="row">
+        <img src="{% static "images/mapa.png" %}" class="img-responsive center-block" alt="{{ ficha.name }}" />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <h1 class="page-header pull-right">{{ card.get_kind_display }}</h1>
+      </div>
+      <div class="row">
+        <p>{{ card.description }}</p>
+      </div>
+      <div class="row">
+        {% if card.tags %}
+        <p>
+          {% for t in card.tags.all %}
+            {{ t.name }}
+          {% endfor %}
+        </p>
+        {% else %}
+          <p>Empty tags.</p>
+        {% endif%}
+      </div>
+    </div>
+
+  </div>
+  {% endblock %}
+
+{% else %}
+  <p>No hay datos para este local.</p>
+{% endif %}

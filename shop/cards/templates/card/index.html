@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if cards %}
+  {% for f in cards %}
+    <div class="col-md-3 item">
+      <a href="{{ f.slug }}">
+          <img class="img-responsive" src="/static/{{ f.logo.url }}" alt="{{ f.name }}">
+      </a>
+    </div>
+  {% endfor %}
+{% else %}
+    <p>Empty</p>
+{% endif %}
+{% endblock %}
