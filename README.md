@@ -4,11 +4,14 @@ This example contains a project to manage information about shops. Within the pr
 
 name, kind, description, logo, image and tags.
 
+### Architecture
+
+![django-example](/doc/image/architecture.jpg)
+
 ### App structure folder
 ![App folder](/doc/image/struct-app.png)
 
 **This example is written with Python 3.7 and Django 2.2.3**
-
 
 If you don’t have pip installed, this [Python installation guide](https://docs.python-guide.org/starting/installation/) can guide you through the process.
 
@@ -33,7 +36,7 @@ Then visit `http://localhost:8000` to view the app.
 
 ## requirements.txt
 
-The requirements.txt consists of all installed Python libraries and Django specific third-party apps that you’re using for your Django project
+The requirements.txt consists of all installed Python libraries and Django specific third-party apps that you’re using for your Django project.
 In this example, requirements.txt should have the following lines:
 
 ```
